@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación Mejorado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-azul-forte py-0">
+    <div class="container-fluid">
+        <!-- Botón Hamburguesa - Solo visible en móvil -->
+        <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon custom-toggler-icon"></span>
+        </button>
+        
+        <!-- Logo -->
+        <a class="navbar-brand mx-auto mx-lg-0" href="index.html">
+            <img src="img/6.png" alt="Logo" style="height: 70px; width: auto;">
+        </a>
+        
+        <!-- Espaciado para alinear en desktop -->
+        <div class="d-none d-lg-block" style="width: 48px;"></div>
+
+        <!-- Menú Colapsable -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="equal-width-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown text-start">
+                        <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
+                        <ul class="dropdown-menu text-start">
+                            <li><a class="dropdown-item" href="#">Medicamentos</a></li>
+                            <li><a class="dropdown-item" href="#">Suplementos</a></li>
+                            <li><a class="dropdown-item" href="#">Granulados</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown text-start">
+                        <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown">Adultos</a>
+                        <ul class="dropdown-menu text-start">
+                            <li><a class="dropdown-item" href="#">Dolor y fiebre</a></li>
+                            <li><a class="dropdown-item" href="#">Vitaminas</a></li>
+                            <li><a class="dropdown-item" href="#">Cuidado crónico</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown text-start">
+                        <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown">Niños</a>
+                        <ul class="dropdown-menu text-start">
+                            <li><a class="dropdown-item" href="#">Jarabes</a></li>
+                            <li><a class="dropdown-item" href="#">Vitaminas infantiles</a></li>
+                            <li><a class="dropdown-item" href="#">Cuidado infantil</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown text-start">
+                        <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown">Dolencias</a>
+                        <ul class="dropdown-menu text-start">
+                            <li><a class="dropdown-item" href="#">Dolor de cabeza</a></li>
+                            <li><a class="dropdown-item" href="#">Gripe y resfriado</a></li>
+                            <li><a class="dropdown-item" href="#">Problemas digestivos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Portada con imagen de fondo -->
+<section class="hero-section">
+    <!-- Imagen de fondo -->
+    <img src="img/portada_1.jpg" alt="Portada" class="hero-image">
+    
+    <!-- Overlay oscuro para el sombreado -->
+    <div class="overlay"></div>
+    
+    <!-- Contenido superpuesto -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title mt-5">Bienvenido a Nuestra Empresa</h1>
+                    <p class="hero-subtitle mx-auto my-5 py-5 fw-bold">Ofrecemos productos de la más alta calidad para cuidar de tu salud y bienestar. Descubre nuestra amplia gama de soluciones.</p>
+                    <div>
+                        <a href="#productos" class="btn btn-hero">Nuestros Productos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de contenido adicional (opcional) -->
+<section class="py-5 bg-light" id="productos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2>Nuestros Productos Destacados</h2>
+                <p class="lead">Conoce nuestra selección de productos más populares</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Suplementos vitamínicos</h5>
+                        <p class="card-text">Completa tu nutrición con nuestras vitaminas de alta calidad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuidado personal</h5>
+                        <p class="card-text">Productos esenciales para tu higiene y cuidado diario.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Medicamentos genéricos</h5>
+                        <p class="card-text">Soluciones efectivas a precios accesibles para toda la familia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<div class="col-12 text-center">
+    <a href="index.html" class="btn btn-outline-primary d-inline-block my-3">INDEX</a>
+</div>
+
+<!-- <div class="">
+    <img src="img/portada.jpg" class="img-fluid container-fluid" alt="portada">
+</div> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
