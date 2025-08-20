@@ -57,7 +57,9 @@
 
 
 
-
+.bg-blue {
+    background: var(--azul-claro-forte);
+}
 .bg-azul-forte {
     background-color: var(--azul-forte);
 }
@@ -250,11 +252,4 @@
 .card-title {
     color: var(--azul-forte);
     font-weight: 600;
-}
-.btn-outline-primary {
-    background: var(--azul-flux);
-}
-.btn {
-    color: var(--azul-claro-forte);
-    font-weight: 700;
 }
