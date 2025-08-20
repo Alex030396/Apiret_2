@@ -251,3 +251,10 @@
     color: var(--azul-forte);
     font-weight: 600;
 }
+.btn-outline-primary {
+    background: var(--azul-flux);
+}
+.btn {
+    color: var(--azul-claro-forte);
+    font-weight: 700;
+}
