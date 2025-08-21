@@ -1,5 +1,5 @@
 :root {
-    --azul-forte: #21252E;
+    --azul-forte: #161816;
     --azul-claro-forte: #86B7D6;
     --azul-flux: #171F2C;
     --naranja-flux: #E3843E;
@@ -7,7 +7,10 @@
     --morado-flux: #7570C0;
     --azul-sombra: rgba(134, 183, 214, 0.6);
 }
-
+body{
+    font-family: "Gill Sans", sans-serif;
+}
+/* COLORES PARA LAS LETRAS */
 .letter-forte {
     color: var(--azul-forte);
 }
@@ -29,7 +32,7 @@
 .letter-azul-sombra {
     color: var(--azul-sombra);
 }
-
+/* FONDO DE COLORES */
 .bg-azul {
     background: linear-gradient(135deg, var(--azul-forte) 0%, var(--azul-flux-noche) 100%);
 }
@@ -54,23 +57,26 @@
 .bg-cir {
     background: linear-gradient(135deg, rgba(33, 37, 46, 0.8) 0%, rgba(46, 52, 110, 0.8) 100%);
 }
-
-
-
 .bg-blue {
     background: var(--azul-claro-forte);
 }
 .bg-azul-forte {
     background-color: var(--azul-forte);
 }
+
+/* NAVEGADOR */
+.borde-bajo {
+    border-bottom:  2px solid white;
+}
 .custom-toggler {
     border-color: white;
 }
+/* HAMBURGUESA */
 .custom-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-nav .nav-link {
-    padding: 0.5rem 1.2rem;
+    padding: 0rem 0rem;
     transition: all 0.3s ease;
 }
 .navbar-nav .nav-link:hover {
@@ -90,7 +96,7 @@
 }
 .equal-width-menu {
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: space-around;
 }
 .equal-width-menu .nav-item {
@@ -114,15 +120,21 @@
     border-left: 0em solid transparent;
 }
 
+/* SECTION IMAGEN PORTADA */
+.seccion-600px {
+    height: 450px;
+    border: 2px solid black;
+    background: var(--azul-forte);
+}
 .wrp {
     width: 100%;
-    height: 600px;
+    height: 500px;
     position: relative;
 }
 .portada {
     width: 100%;
     height: 100%;
-    background: url(../img/portada.jpg);
+    /* background: url(../img/portada.jpg); */
     background-attachment: fixed;
 }
 .contenido {
@@ -134,21 +146,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,11,0.6);
+    background: var(--azul-forte);
+    border-top:  1px solid white;
 }
-.contenido .info {
+/* .info {
     width: 100%;
     max-width: 750px;
     text-align: center;
-}
-.contenido .info h1 {
+} */
+/* .info h1 {
     color: #fff;
     font-size: 50px;
     text-shadow: 0px 1px 10px rgba(0,0,0,0.4);
     margin-bottom: 25px;
     letter-spacing: 1px;
-}
-.contenido .info a {
+} */
+
+/* .info a {
     display: inline-block;
     text-decoration: none;
     font-size: 19px;
@@ -161,83 +175,22 @@
     transition: all 30ms ease;
     letter-spacing: 0.5px;
 }
-.contenido .info a:hover {
+.info a:hover {
     background: transparent;
     border: 2px solid #fff;
+} */
+ .boton {
+    text-decoration: none;
+    color: var(--azul-forte);
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
 }
-.hero-section {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(134, 183, 214, 0.6);
-    z-index: 2;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 3;
+.boton:hover {
     color: white;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 20px;
+    background: var(--azul-sombra);
 }
-
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
-}
-
-.btn-hero {
-    padding: 12px 30px;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    background-color: #0d6efd;
-    border: none;
-    transition: all 0.3s ease;
-}
-
-.btn-hero:hover {
-    background-color: #0b5ed7;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-}
+/* TARJETAS */
 .card {
     border-color: var(--azul-flux-noche);
     border-radius: 15px;
