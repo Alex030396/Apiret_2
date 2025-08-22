@@ -1,5 +1,5 @@
 :root {
-    --azul-forte: #161816;
+    --azul-forte: #0007A0;
     --azul-claro-forte: #86B7D6;
     --azul-flux: #171F2C;
     --naranja-flux: #E3843E;
@@ -198,11 +198,18 @@ body{
     transition: transform 0.3s ease;
 }
 
-.card:hover {
+/* .card:hover {
     transform: translateY(-5px);
-}
+} */
 
 .card-title {
     color: var(--azul-forte);
     font-weight: 600;
+}
+.full a {
+    text-decoration: none;
+    color: black;
+}
+.full a:hover {
+    text-decoration: underline;
 }
