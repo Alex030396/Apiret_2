@@ -8,9 +8,13 @@
     --azul-sombra: rgba(134, 183, 214, 0.6);
 }
 body{
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;;
 }
 /* COLORES PARA LAS LETRAS */
+.bg-claro-forte {
+    background: var(--azul-claro-forte);
+}
+
 .letter-forte {
     color: var(--azul-forte);
 }
@@ -212,4 +216,28 @@ body{
 }
 .full a:hover {
     text-decoration: underline;
+}
+
+.margen {
+    margin-left: 22rem;
+}
+@media(max-width: 1560px) {
+    .margen{
+        margin-left: 7.3rem;
+    }
+}
+@media(max-width: 1121px) {
+    .margen{
+        margin-left: 4.6rem;
+    }
+}
+@media(max-width: 821px) {
+    .margen{
+        margin-left: 2.8rem;
+    }
+}
+@media(max-width: 582px) {
+    .margen{
+        margin-left: 1rem;
+    }
 }
