@@ -241,3 +241,21 @@ body{
         margin-left: 1rem;
     }
 }
+
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form-control {
+    border: 1px solid #ced4da;
+    padding: 10px 15px;
+}
+        
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
