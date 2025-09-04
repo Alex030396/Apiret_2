@@ -183,7 +183,7 @@ body{
     background: transparent;
     border: 2px solid #fff;
 } */
- .boton {
+.boton {
     text-decoration: none;
     color: var(--azul-forte);
     background-color: white;
@@ -191,6 +191,17 @@ body{
     padding: 1rem;
 }
 .boton:hover {
+    color: white;
+    background: var(--azul-sombra);
+}
+.boton1 {
+    text-decoration: none;
+    color: var(--azul-forte);
+    background-color: var(--azul-claro-forte);
+    border-radius: 20px;
+    padding: 1rem;
+}
+.boton1:hover {
     color: white;
     background: var(--azul-sombra);
 }
@@ -229,6 +240,7 @@ body{
 @media(max-width: 1121px) {
     .margen{
         margin-left: 4.6rem;
+        margin-bottom: 2rem;
     }
 }
 @media(max-width: 821px) {
@@ -258,4 +270,34 @@ body{
 .form-control:focus {
     border-color: #86b7fe;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.list_sin {
+    list-style-type: none;
+    padding-left: 0;
+}
+.enlace {
+    text-decoration: none;
+}
+
+.divider {
+    height: 2px;
+    background-color: #0d6efd;
+    opacity: 0.5;
+    margin: 1.5rem 0;
+    display: block;
+}
+
+/* Mostrar divisores en móvil */
+@media (max-width: 767.98px) {
+    .divider {
+        display: block !important;
+    }
+}
+
+/* Ocultar divisores en escritorio */
+@media (min-width: 768px) {
+    .divider {
+        display: none !important;
+    }
 }
