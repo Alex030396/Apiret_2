@@ -37,6 +37,9 @@ body{
     color: var(--azul-sombra);
 }
 /* FONDO DE COLORES */
+.bg-apiret{
+    background: linear-gradient(to right, #242321 0%, #20272C 50%, #231B62 100%);
+}
 .bg-azul {
     background: linear-gradient(135deg, var(--azul-forte) 0%, var(--azul-flux-noche) 100%);
 }
@@ -300,4 +303,8 @@ body{
     .divider {
         display: none !important;
     }
+}
+
+.bg-apiret{
+    background: linear-gradient(to right, #242321 0%, #20272C 50%, #231B62 100%);
 }
