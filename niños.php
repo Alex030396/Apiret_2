@@ -1,0 +1,204 @@
+<?php require('header.php') ?>
+
+<!-- BARRA DE INFORMACION -->
+<section class="seccion-600px bg-apiret h-100 ">
+    <div class=" h-100">
+        <div class=" h-100 align-items-center">
+            <div class="">
+                <div class=" ms-5 my-4 px-5">
+                    <h1 class="text-white ps-5  text">Apiret para los mas pequños de la casa. <br> El acetaminofen por excelencia</h1>
+                    <p class="text-white ps-5">Tenemos para todas las edades. Efectivo para gripe, refriados, dolores de cabeza y malestar general</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+<div class="container">
+    <hr class="my-4 border-primary border-1 opacity-50">          
+</div>
+<!-- PRODCUTOS -->
+<!-- <section class=" " id="productos">
+    <div class="container ">
+            <div class="col-12 ">
+                <h1 class="letter-forte fw-bold fs-1 mt-5">Productos Destacados</h1>
+            </div>
+        </div> -->
+    <!-- SECCION 1 PRODUCTOS -->
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="h-100">
+                    <!-- <img src="img/apiretflufluy.png" class="card-img-top" alt="Producto 1"> -->
+                    <!-- <div class="card-body row"> -->
+                        <!-- <h5 class="card-title col-12 text-start my-3 "> <li>Apiret Flu Día Granulado 8 gr X 6 Sobres</li></h5> -->
+                        <!-- <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Flu</a>
+                        </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/gallery7.png" class="card-img-top" alt="Producto 2">
+                    <div class="card-body row">
+                        <h5 class="card-title col-12 text-start my-3"><li>Apiret 180 mg/5mL Solución Oral 120 mL  </li></h5>
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret sol. Oral</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/gallery8.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body row">
+                        <h5 class="card-title col-12 text-start my-3"><li>Apiret 500 mg 10 tabletas    </li></h5>
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret tabletas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/gallery9.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body row">
+                        <h5 class="card-title col-12 text-start my-3"><li>Apiret Forte 650 mg x 10 Tabletas</li></h5>
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Forte</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECCION 2 PRODUCTOS -->
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="h-100">
+                    <!-- <img src="img/apiretflufluy.png" class="card-img-top" alt="Producto 1"> -->
+                    <!-- <div class="card-body row"> -->
+                        <!-- <h5 class="card-title col-12 text-start my-3 "> <li>Apiret Flu Día Granulado 8 gr X 6 Sobres</li></h5> -->
+                        <!-- <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Flu</a>
+                        </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/gallery7.png" class="card-img-top" alt="Producto 2">
+                    <div class="card-body row">
+                        <h5 class="card-title col-12 text-start my-3"><li>Apiret 180 mg/5mL Solución Oral 120 mL  </li></h5>
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret sol. Oral</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/gallery8.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body row">
+                        <h5 class="card-title col-12 text-start my-3"><li>Apiret 500 mg 10 tabletas    </li></h5>
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret tabletas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/gallery9.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body row">
+                        <h5 class="card-title col-12 text-start my-3"><li>Apiret Forte 650 mg x 10 Tabletas</li></h5>
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Forte</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECCION 3 PRODUCTOS -->
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="h-100">
+                    <!-- <img src="img/apiretflufluy.png" class="card-img-top" alt="Producto 1"> -->
+                    <!-- <div class="card-body row"> -->
+                        <!-- <h5 class="card-title col-12 text-start my-3 "> <li>Apiret Flu Día Granulado 8 gr X 6 Sobres</li></h5> -->
+                        <!-- <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Flu</a>
+                        </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/gallery7.png" class="card-img-top" alt="Producto 2">
+                    <div class="card-body row">
+                        <h5 class="card-title col-12 text-start my-3"><li>Apiret 180 mg/5mL Solución Oral 120 mL  </li></h5>
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret sol. Oral</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/gallery8.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body row">
+                        <h5 class="card-title col-12 text-start my-3"><li>Apiret 500 mg 10 tabletas    </li></h5>
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret tabletas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/gallery9.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body row">
+                        <h5 class="card-title col-12 text-start my-3"><li>Apiret Forte 650 mg x 10 Tabletas</li></h5>
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Forte</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<br>
+<br>
+
+<!-- BARRA DE INFORMACION CON IMAGEN -->
+<section>
+    <div class="container-fluid bg-apiret">
+        <div class="row">
+            <div class="col-12 col-lg-6 pt-5 pt-lg-0 my-auto ">
+                <div class="text-start margen" >
+                    <h2 class="text-white ">La vinotinto va al mundial para el 2028</h2>
+                    <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel explicabo laboriosam, repellendus voluptates enim aut repudiandae unde odit iusto est minus sunt placeat corporis ad adipisci eligendi, ratione, veniam vero!</p>
+                    <a href="#" class="boton fw-bold ">Promoxiones</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 pt-5 pt-lg-0 p-0">
+                <img src="img/familia-apiret.png" class="img-fluid" alt="family">
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+<br>
+<br>
+
+<?php require('footer.php') ?>

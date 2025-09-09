@@ -6,6 +6,7 @@
     --azul-flux-noche: #2E346E;
     --morado-flux: #7570C0;
     --azul-sombra: rgba(134, 183, 214, 0.6);
+    --azul-apiret: linear-gradient(to right, #0E1834 0%, #182C67 50%, #203C8E 100%);
 }
 body{
     font-family: 'Roboto', sans-serif;;
@@ -16,7 +17,7 @@ body{
 }
 
 .letter-forte {
-    color: var(--azul-forte);
+    color: var(--azul-apiret);
 }
 .letter-claro-forte {
     color: var(--azul-claro-forte);
@@ -199,8 +200,8 @@ body{
 }
 .boton1 {
     text-decoration: none;
-    color: var(--azul-forte);
-    background-color: var(--azul-claro-forte);
+    color: white;
+    background: var(--azul-apiret);
     border-radius: 20px;
     padding: 1rem;
 }
@@ -226,7 +227,7 @@ body{
 }
 .full a {
     text-decoration: none;
-    color: black;
+    color:white;
 }
 .full a:hover {
     text-decoration: underline;
@@ -304,6 +305,17 @@ body{
         display: none !important;
     }
 }
+
+.btn-outline-primary {
+    background: var(--azul-apiret);
+    color: white;
+    font-weight: 700;
+}
+.btn-outline-primary:hover {
+    background: white;
+    color: var(--azul-apiret);
+}
+
 
 .bg-apiret{
     background: linear-gradient(to right, #0E1834 0%, #182C67 50%, #203C8E 100%);
