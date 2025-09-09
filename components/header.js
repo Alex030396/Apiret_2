@@ -51,7 +51,7 @@ class Header extends HTMLElement {
                     <li class="nav-item dropdown text-start">
                         <a class="nav-link dropdown-toggle text-white fw-bold " href="#" role="button" data-bs-toggle="dropdown"><h4 class="pt-4">Adultos</h4></a>
                         <ul class="dropdown-menu text-start">
-                            <li><a class="dropdown-item" href="#">Dolor y fiebre</a></li>
+                            <li><a class="dropdown-item" href="dolor.html">Dolor y fiebre</a></li>
                             <li><a class="dropdown-item" href="#">Vitaminas</a></li>
                             <li><a class="dropdown-item" href="#">Cuidado crónico</a></li>
                         </ul>
@@ -73,8 +73,8 @@ class Header extends HTMLElement {
                     <li class="nav-item dropdown text-start">
                         <a class="nav-link dropdown-toggle text-white fw-bold " href="#" role="button" data-bs-toggle="dropdown"><h4 class="pt-4 ">Dolencias</h4></a>
                         <ul class="dropdown-menu text-start">
-                            <li><a class="dropdown-item" href="#">Dolor de cabeza</a></li>
-                            <li><a class="dropdown-item" href="#">Gripe y resfriado</a></li>
+                            <li><a class="dropdown-item" href="dolor.html">Dolor de cabeza</a></li>
+                            <li><a class="dropdown-item" href="malestar.html">Gripe y resfriado</a></li>
                             <li><a class="dropdown-item" href="#">Problemas digestivos</a></li>
                         </ul>
                     </li>

@@ -60,7 +60,7 @@ class Footer extends HTMLElement {
                         <li class="list_sin">
                             <h3 class="text-white fw-bold">Adultos</h3>
                             <ul class="list_sin">
-                                <li><a class="dropdown-item my-4" href="#">Dolor y fiebre</a></li>
+                                <li><a class="dropdown-item my-4" href="dolor.html">Dolor y fiebre</a></li>
                                 <li><a class="dropdown-item mb-4" href="#">Vitaminas</a></li>
                                 <li><a class="dropdown-item mb-4" href="#">Cuidado crónico</a></li>
                             </ul>
@@ -77,7 +77,7 @@ class Footer extends HTMLElement {
                             <ul class="list_sin">
                                 <li><a class="dropdown-item my-4" href="#">Jarabes</a></li>
                                 <li><a class="dropdown-item mb-4" href="#">Vitaminas infantiles</a></li>
-                                <li><a class="dropdown-item mb-4" href="#">Cuidado infantil</a></li>
+                                <li><a class="dropdown-item mb-4" href="ninoscopy.html">Cuidado infantil</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -90,8 +90,8 @@ class Footer extends HTMLElement {
                         <li class="list_sin">
                             <h3 class="text-white fw-bold ">Dolencias</h3>
                             <ul class="list_sin">
-                                <li><a class="dropdown-item my-4" href="#">Dolor de cabeza</a></li>
-                                <li><a class="dropdown-item mb-4" href="#">Gripe y resfriado</a></li>
+                                <li><a class="dropdown-item my-4" href="dolor.html">Dolor de cabeza</a></li>
+                                <li><a class="dropdown-item mb-4" href="malestar.html">Gripe y resfriado</a></li>
                                 <li><a class="dropdown-item mb-4" href="#">Problemas digestivos</a></li>
                             </ul>
                         </li>
