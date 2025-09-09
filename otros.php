@@ -19,7 +19,7 @@
         </button>
         
         <!-- Logo -->
-        <a class="navbar-brand mx-auto mx-lg-0 px-5" href="index.html">
+        <a class="navbar-brand mx-auto mx-lg-0 px-5" href="index.php">
             <img src="img/6.png" alt="Logo" style="height: 60px; width: auto;">
         </a>
         
@@ -57,7 +57,7 @@
                         <ul class="dropdown-menu text-start">
                             <li><a class="dropdown-item" href="#">Jarabes</a></li>
                             <li><a class="dropdown-item" href="#">Vitaminas infantiles</a></li>
-                            <li><a class="dropdown-item" href="niñoscopy.html">Cuidado infantil</a></li>
+                            <li><a class="dropdown-item" href="niños.php">Cuidado infantil</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -129,7 +129,7 @@
                     <img src="img/apiretflufluy.png" class="card-img-top" alt="Producto 1">
                     <div class="card-body row bg-apiret">
                         <div class="col-12 text-center full">
-                            <a href="niñoscopy.html" class="d-inline-block my-3 fw-bold"><h6 class="text-white fw-bold">Niños y Bebes</h6></a>
+                            <a href="niños.php" class="d-inline-block my-3 fw-bold"><h6 class="text-white fw-bold">Niños y Bebes</h6></a>
                         </div>
                     </div>
                 </div>
