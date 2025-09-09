@@ -77,7 +77,7 @@ class Footer extends HTMLElement {
                             <ul class="list_sin">
                                 <li><a class="dropdown-item my-4" href="#">Jarabes</a></li>
                                 <li><a class="dropdown-item mb-4" href="#">Vitaminas infantiles</a></li>
-                                <li><a class="dropdown-item mb-4" href="ninoscopy.html">Cuidado infantil</a></li>
+                                <li><a class="dropdown-item mb-4" href="niñoscopy.html">Cuidado infantil</a></li>
                             </ul>
                         </li>
                     </ul>
