@@ -320,3 +320,8 @@ body{
 .bg-apiret{
     background: linear-gradient(to right, #0E1834 0%, #182C67 50%, #203C8E 100%);
 }
+
+.img-size {
+    width: 50%;
+    margin: auto;
+}

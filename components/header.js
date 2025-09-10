@@ -27,7 +27,7 @@ class Header extends HTMLElement {
         
         <!-- Logo -->
         <a class="navbar-brand mx-auto mx-lg-0 px-5" href="index.html">
-            <img src="img/6.png" alt="Logo" style="height: 60px; width: auto;">
+            <img src="img/Apiret.png" alt="Logo" style="height: 60px; width: auto;">
         </a>
         
         <!-- Espaciado para alinear en desktop -->

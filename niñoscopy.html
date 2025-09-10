@@ -29,18 +29,85 @@
 <div class="container">
     <hr class="my-4 border-primary border-1 opacity-50">          
 </div>
-<!-- PRODCUTOS -->
-<!-- <section class=" " id="productos">
-    <div class="container ">
-            <div class="col-12 ">
-                <h1 class="letter-forte fw-bold fs-1 mt-5">Productos Destacados</h1>
+<div class="container">
+    <div class="row">
+            <div class="col-3">
+                <div class="filter-sidebar">
+                    <div class=" p-4 my-5 filter-group">
+                        <h4 class="filter-group-title">Categorías</h4>
+                        <div class="filter-option form-check">
+                            <input class="form-check-input filter-category" type="checkbox" value="niño" id="filter-nino">
+                            <label class="form-check-label" for="filter-nino">
+                                Niño
+                            </label>
+                        </div>
+                        <div class="filter-option form-check">
+                            <input class="form-check-input filter-category" type="checkbox" value="adulto" id="filter-adulto">
+                            <label class="form-check-label" for="filter-adulto">
+                                Adulto
+                            </label>
+                        </div>
+                    </div>
+                    <div class="p-4 filter-group">
+                        <h4 class="filter-group-title">Presentación</h4>
+                        <div class="filter-option form-check">
+                            <input class="form-check-input filter-presentacion" type="checkbox" value="Tabletas" id="brand-1">
+                            <label class="form-check-label" for="brand-1">
+                                Tabletas
+                            </label>
+                        </div>
+                        <div class="filter-option form-check">
+                            <input class="form-check-input filter-presentacion" type="checkbox" value="Solución" id="brand-2">
+                            <label class="form-check-label" for="brand-2">
+                                Solución Oral
+                            </label>
+                        </div>
+                        <div class="filter-option form-check">
+                            <input class="form-check-input filter-presentacion" type="checkbox" value="Granulado" id="brand-3">
+                            <label class="form-check-label" for="brand-3">
+                                Granulado
+                            </label>
+                        </div>
+                        <div class="filter-option form-check">
+                            <input class="form-check-input filter-presentacion" type="checkbox" value="Supositorio" id="brand-4">
+                            <label class="form-check-label" for="brand-4">
+                                Supositorio
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> -->
+
+        
+        <div class="col-9">
+            <!-- ORDENADOR POR ALGABETO -->
+            <div class="sort-options d-flex justify-content-end align-items-end">
+                <div>
+                    <label class="me-2 ">Ordenar por:</label>
+                    <select class="form-select form-select-sm d-inline-block w-auto" id="sort-select">
+                        <option value="az">Nombre (A-Z)</option>
+                        <option value="za">Nombre (Z-A)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" id="products-container"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <hr class="my-4 border-primary border-1 opacity-50">          
+</div>
+
+
+
+
     <!-- SECCION 1 PRODUCTOS -->
-    <div class="container mt-5">
+    <!-- <div class="container mt-5">
         <div class="row ">
             <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="h-100">
+                <div class="h-100"> -->
                     <!-- <img src="img/apiretflufluy.png" class="card-img-top" alt="Producto 1"> -->
                     <!-- <div class="card-body row"> -->
                         <!-- <h5 class="card-title col-12 text-start my-3 "> <li>Apiret Flu Día Granulado 8 gr X 6 Sobres</li></h5> -->
@@ -48,7 +115,7 @@
                             <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Flu</a>
                         </div> -->
                     <!-- </div> -->
-                </div>
+                <!-- </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="card h-100">
@@ -84,19 +151,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- SECCION 2 PRODUCTOS -->
-    <div class="container mt-5">
+    <!-- <div class="container mt-5">
         <div class="row ">
             <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="h-100">
-                    <!-- <img src="img/apiretflufluy.png" class="card-img-top" alt="Producto 1"> -->
-                    <!-- <div class="card-body row"> -->
-                        <!-- <h5 class="card-title col-12 text-start my-3 "> <li>Apiret Flu Día Granulado 8 gr X 6 Sobres</li></h5> -->
-                        <!-- <div class="col-12 text-center">
-                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Flu</a>
-                        </div> -->
-                    <!-- </div> -->
+                   
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
@@ -111,79 +172,15 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img src="img/gallery8.png" class="card-img-top" alt="Producto 3">
-                    <div class="card-body row">
-                        <h5 class="card-title col-12 text-start my-3"><li>Apiret 500 mg 10 tabletas    </li></h5>
-                        <div class="col-12 text-center">
-                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret tabletas</a>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img src="img/gallery9.png" class="card-img-top" alt="Producto 3">
-                    <div class="card-body row">
-                        <h5 class="card-title col-12 text-start my-3"><li>Apiret Forte 650 mg x 10 Tabletas</li></h5>
-                        <div class="col-12 text-center">
-                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Forte</a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
-    <!-- SECCION 3 PRODUCTOS -->
-    <div class="container mt-5">
-        <div class="row ">
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="h-100">
-                    <!-- <img src="img/apiretflufluy.png" class="card-img-top" alt="Producto 1"> -->
-                    <!-- <div class="card-body row"> -->
-                        <!-- <h5 class="card-title col-12 text-start my-3 "> <li>Apiret Flu Día Granulado 8 gr X 6 Sobres</li></h5> -->
-                        <!-- <div class="col-12 text-center">
-                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Flu</a>
-                        </div> -->
-                    <!-- </div> -->
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img src="img/gallery7.png" class="card-img-top" alt="Producto 2">
-                    <div class="card-body row">
-                        <h5 class="card-title col-12 text-start my-3"><li>Apiret 180 mg/5mL Solución Oral 120 mL  </li></h5>
-                        <div class="col-12 text-center">
-                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret sol. Oral</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img src="img/gallery8.png" class="card-img-top" alt="Producto 3">
-                    <div class="card-body row">
-                        <h5 class="card-title col-12 text-start my-3"><li>Apiret 500 mg 10 tabletas    </li></h5>
-                        <div class="col-12 text-center">
-                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret tabletas</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="card h-100">
-                    <img src="img/gallery9.png" class="card-img-top" alt="Producto 3">
-                    <div class="card-body row">
-                        <h5 class="card-title col-12 text-start my-3"><li>Apiret Forte 650 mg x 10 Tabletas</li></h5>
-                        <div class="col-12 text-center">
-                            <a href="#" class="btn btn-outline-primary d-inline-block my-3 fw-bold">Apiret Forte</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    
+</section> -->
 
 
 <br>
@@ -221,5 +218,6 @@
             console.log('Página cargada correctamente');
         });
     </script>
+    <script src="script/UNO.js"></script>
 </body>
 </html>
