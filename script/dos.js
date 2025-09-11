@@ -1,18 +1,19 @@
 const products = [
-    { id: 1, name: "Apiret 180 mg/5mL Solución Oral 120 mL", category: "solucion", audience: "niño", image: "img/gallery7.png", boton: "Mas información", presentacion: "Solución", sintoma:"fiebre",edad: 0, edad1: 2, edad2: 2, edad3:6, sintoma1: "reaccion", sintoma2: "malestar" },
-    { id: 2, name: "Apiret 500 mg 10 tabletas", category: "tableta", audience: "adulto", image: "img/gallery8.png", boton: "Mas información", presentacion: "Tabletas", sintoma:"fiebre" , edad: 7, edad1: 12, edad2: 12, edad3: 99, sintoma1: "dolor" ,sintoma2: "malestar"},
-    { id: 3, name: "Apiret Forte 650 mg x 10 Tabletas", category: "tableta", audience: "adulto", image: "img/gallery9.png", boton: "Mas información", presentacion: "Tabletas", sintoma:"fiebre",edad: 12, edad1: 99, edad2: 7, edad3: 12, sintoma1: "dolor" ,sintoma2: "malestar"},
-    { id: 4, name: "Apiret 180 mg/5mL Solución Oral 60 mL", category: "solucion", audience: "niño", image: "img/gallery7.png", boton: "Mas información", presentacion: "Solución", sintoma:"fiebre",edad: 0, edad1: 2, edad2: 2, edad3:6, sintoma1: "reaccion", sintoma2: "malestar"},
-    { id: 5, name: "Apiret Supositorio 250mg x 6", category: "Supositorio", audience: "niño", audience1: "adulto", image: "img/images.jpg", boton: "Mas información", presentacion: "Supositorio", sintoma:"fiebre",edad: 2, edad1: 6, edad2: 7, edad3: 12, edad4: 12, edad5: 99, sintoma1:"reaccion"},
-    { id: 6, name: "Apiret Supositorio 125mg x 6", category: "Supositorio", audience: "niño", image: "img/images.jpg", boton: "Mas información", presentacion: "Supositorio", sintoma:"fiebre",edad: 0, edad1: 2, edad2: 2, edad3: 6, sintoma1:"reaccion"},
-    { id: 7, name: "Apiret Flu Noche Granulado 8gr X 6 Sobres", category: "Granulado", audience: "adulto", image: "img/apiretflufluy.png", boton: "Mas información", presentacion: "Granulado",  edad: 12, edad1: 99, sintoma1: "refrio"  },
-    { id: 8, name: "Apiret Flu Dia Granulado 8gr X 6 Sobres", category: "Granulado", audience: "adulto", image: "img/apiretflufluy.png", boton: "Mas información", presentacion: "Granulado",  sintoma1:"refrio", edad: 12, edad1: 99 }
+    { id: 1, name: "Apiret 180 mg/5mL Solución Oral 120 mL", category: "solucion", audience: "niño", image: "img/gallery7.png", boton: "Mas información", presentacion: "Solución", sintoma: "dolor" },
+    { id: 2, name: "Apiret 500 mg 10 tabletas", category: "tableta", audience: "adulto", image: "img/gallery8.png", boton: "Mas información", presentacion: "Tabletas", sintoma: "dolor" },
+    { id: 3, name: "Apiret Forte 650 mg x 10 Tabletas", category: "tableta", audience: "adulto", image: "img/gallery9.png", boton: "Mas información", presentacion: "Tabletas", sintoma: "dolor" },
+    { id: 4, name: "Apiret 180 mg/5mL Solución Oral 60 mL", category: "solucion", audience: "niño", image: "img/gallery7.png", boton: "Mas información", presentacion: "Solución", sintoma: "dolor" },
+    { id: 5, name: "Apiret Supositorio 250mg x 6", category: "Supositorio", audience: "niño", image: "img/images.jpg", boton: "Mas información", presentacion: "Supositorio", sintoma: "dolor" },
+    { id: 6, name: "Apiret Supositorio 125mg x 6", category: "Supositorio", audience: "niño", image: "img/images.jpg", boton: "Mas información", presentacion: "Supositorio", sintoma: "dolor" },
+    { id: 7, name: "Apiret Flu Noche Granulado 8gr X 6 Sobres", category: "Granulado", audience: "niño", image: "img/apiretflufluy.png", boton: "Mas información", presentacion: "Granulado", sintoma: "refrio", sintoma1:"gripe" },
+    { id: 8, name: "Apiret Flu Dia Granulado 8gr X 6 Sobres", category: "Granulado", audience: "niño", image: "img/apiretflufluy.png", boton: "Mas información", presentacion: "Granulado", sintoma: "refrio", sintoma1:"gripe" }
 ];
 
+// Determinar el tipo de página (adulto, niño o productos)
 const pageType = (() => {
     const path = window.location.pathname;
     if (path.includes('adulto.html')) return 'adulto';
-    if (path.includes('nino.html')) return 'nino';
+    if (path.includes('niño.html')) return 'niño';
     return 'productos'; // Página por defecto
 })();
 
@@ -36,7 +37,7 @@ function renderProducts(productsToRender) {
         col.className = 'col-md-4 mb-4';
         col.innerHTML = `
             <div class="card h-100">
-                <img src="${product.image}" class="card-img-top " alt="${product.name}">
+                <img src="${product.image}" class="card-img-top" alt="${product.name}">
                 <div class="card-body row">
                     <h5 class="card-title col-12 text-start my-3"><li>${product.name}</li></h5>
                     <div class="col-12 text-center">
@@ -53,14 +54,13 @@ function applyFilters() {
     const selectedCategories = Array.from(document.querySelectorAll('.filter-category:checked')).map(cb => cb.value);
     const selectedPresentacion = Array.from(document.querySelectorAll('.filter-presentacion:checked')).map(cb => cb.value);
     const selectedSintomas = Array.from(document.querySelectorAll('.filter-sintomas:checked')).map(cb => cb.value);
-    const selectedEdades = Array.from(document.querySelectorAll('.filter-edades:checked')).map(cb => cb.value);
     
     let filteredProducts = products;
     
     // Filtrar por categoría/audiencia
     if (selectedCategories.length > 0) {
         filteredProducts = filteredProducts.filter(product => 
-            selectedCategories.includes(product.audience) || selectedCategories.includes(product.category) || selectedCategories.includes(product.audience1)
+            selectedCategories.includes(product.audience) || selectedCategories.includes(product.category)
         );
     }
 
@@ -72,18 +72,8 @@ function applyFilters() {
 
     if (selectedSintomas.length > 0) {
         filteredProducts = filteredProducts.filter(product => 
-            selectedSintomas.includes(product.sintoma) || selectedSintomas.includes(product.sintoma1) || selectedSintomas.includes(product.sintoma2) 
+            selectedSintomas.includes(product.sintoma) || selectedSintomas.includes(product.sintoma1)
         );
-    }
-
-    // Filtrar por Edades
-    if (selectedEdades.length > 0) {
-        filteredProducts = filteredProducts.filter(product => {
-            return selectedEdades.some(edadRange => {
-                const [min, max] = edadRange.split('-').map(Number);
-                return product.edad >= min && product.edad1 <= max || product.edad2 >= min && product.edad3 <= max || product.edad4 >= min && product.edad5 <= max;
-            });
-        });
     }
     
     // Ordenar productos
@@ -99,7 +89,7 @@ function applyFilters() {
     
     renderProducts(filteredProducts);
     document.querySelector('.results-count').textContent = `${filteredProducts.length} de ${products.length} productos`;
-
+    
     // Actualizar texto de filtros aplicados
     const filteredText = document.querySelector('.filtered-text');
     if (selectedCategories.length > 0 || selectedPresentacion.length > 0 || selectedSintomas.length > 0) {
@@ -112,38 +102,30 @@ function applyFilters() {
     } else {
         filteredText.textContent = '';
     }
-
 }
 
-    document.addEventListener('DOMContentLoaded', function() {
+// Inicializar la página
+document.addEventListener('DOMContentLoaded', function() {
     // Configurar según el tipo de página
     if (pageType === 'adulto') {
         document.getElementById('filter-adulto').checked = true;
         document.querySelectorAll('.filter-category').forEach(el => {
             el.closest('.form-check').classList.add('hidden-filter');
         });
-        // Eliminar el elemento h5 con id="anexo" si existe
-        const h5Anexo = document.querySelector('h5#anexo');
-        if (h5Anexo) {
-            h5Anexo.remove();
-        }
-    } else if (pageType === 'nino') {
+        document.querySelector('h1').textContent = 'Productos para Adultos';
+    } else if (pageType === 'niño') {
         document.getElementById('filter-niño').checked = true;
         document.querySelectorAll('.filter-category').forEach(el => {
             el.closest('.form-check').classList.add('hidden-filter');
         });
-        // Eliminar el elemento h5 con id="anexo" si existe
-        const h5Anexo = document.querySelector('h5#anexo');
-        if (h5Anexo) {
-            h5Anexo.remove();
-        }
+        document.querySelector('h1').textContent = 'Productos para Niños';
     }
-
+    
     // Aplicar filtros automáticamente al cargar
     applyFilters();
     
     // Aplicar filtros automáticamente al cambiar cualquier checkbox
-    document.querySelectorAll('.filter-category, .filter-sintomas, .filter-presentacion, .filter-edades').forEach(checkbox => {
+    document.querySelectorAll('.filter-category, .filter-sintomas, .filter-presentacion').forEach(checkbox => {
         checkbox.addEventListener('change', applyFilters);
     });
     
@@ -159,35 +141,3 @@ function applyFilters() {
         applyFilters();
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Inicializar la página
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Renderizar todos los productos al cargar
-//     renderProducts(products);
-    
-//     // Aplicar filtros automáticamente al cambiar cualquier checkbox
-//     document.querySelectorAll('.filter-category, .filter-sintomas, .filter-presentacion').forEach(checkbox => {
-//         checkbox.addEventListener('change', applyFilters);
-//     });
-    
-//     // Aplicar filtros al cambiar el ordenamiento
-//     document.getElementById('sort-select').addEventListener('change', applyFilters);
-// });

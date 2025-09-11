@@ -325,3 +325,10 @@ body{
     width: 50%;
     margin: auto;
 }
+.hidden-filter {
+    display: none;
+}
+
+.filter-section {
+    padding-top: 5rem;
+}
