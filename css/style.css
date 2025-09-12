@@ -73,6 +73,14 @@ body{
 }
 
 /* NAVEGADOR */
+.intro {
+    padding-left: 11rem;
+}
+@media (max-width:1119px) {
+    .intro{
+        padding: 2rem;
+    }
+}
 .borde-bajo {
     border-bottom:  2px solid white;
 }
@@ -246,15 +254,24 @@ body{
         margin-left: 4.6rem;
         margin-bottom: 2rem;
     }
+    .intro {
+        padding-left: 8.6rem;
+    }
 }
 @media(max-width: 821px) {
     .margen{
         margin-left: 2.8rem;
     }
+    .intro {
+        padding-left: 4.6rem;
+    }
 }
 @media(max-width: 582px) {
     .margen{
         margin-left: 1rem;
+    }
+    .intro {
+        padding-left: 2.6rem;
     }
 }
 
@@ -331,4 +348,33 @@ body{
 
 .filter-section {
     padding-top: 5rem;
+}
+.tables tbody tr {
+    border: 1px solid black;
+}
+
+.tables {
+    width: 100%;
+    font-size: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+.tables thead tr {
+    background: var(--azul-apiret);
+    color: white;
+    text-align: start;
+}
+.tables th,
+.tables td {
+    padding: 1rem;
+    width: 50%;
+    border: 1px solid black;
+}
+.tables tbody tr {
+    border: 1px solid black;
+}
+.tables td:first-child {
+    border-right: 2px solid black;
 }

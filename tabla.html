@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Estilo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .styled-table thead tr {
+            background-color: #1a237e; /* Azul oscuro */
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+        
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+            background-color: white; /* Fondo blanco */
+            color: black; /* Letras negras */
+        }
+        
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f8f9fa; /* Fondo ligeramente gris para filas pares */
+        }
+        
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #1a237e;
+        }
+        
+        .styled-table tbody tr:hover {
+            background-color: #e8eaf6; /* Color al pasar el mouse */
+            transition: background-color 0.2s;
+        }
+        
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+            overflow-x: auto;
+        }
+        
+        .code-comment {
+            color: #75715e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tabla con Estilo Mejorado</h1>
+        
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>@social</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Jane</td>
+                    <td>Smith</td>
+                    <td>@jsmith</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Michael</td>
+                    <td>Johnson</td>
+                    <td>@mjohn</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="code-block">
+            <span class="code-comment">/* CSS utilizado para el estilo de la tabla */</span><br>
+            .styled-table thead tr {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;background-color: #1a237e; <span class="code-comment">/* Azul oscuro */</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff; <span class="code-comment">/* Letras blancas */</span><br>
+            }<br><br>
+            
+            .styled-table tbody tr {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;background-color: white; <span class="code-comment">/* Fondo blanco */</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;color: black; <span class="code-comment">/* Letras negras */</span><br>
+            }<br>
+        </div>
+    </div>
+</body>
+</html>

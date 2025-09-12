@@ -13,6 +13,9 @@ const pageType = (() => {
     const path = window.location.pathname;
     if (path.includes('adulto.html')) return 'adulto';
     if (path.includes('nino.html')) return 'nino';
+    if (path.includes('dolor.html')) return 'dolor';
+    if (path.includes('malestar.html')) return 'malestar';
+    if (path.includes('resfriado.html')) return 'resfriado';
     return 'productos'; // Página por defecto
 })();
 
@@ -134,6 +137,33 @@ function applyFilters() {
         });
         // Eliminar el elemento h5 con id="anexo" si existe
         const h5Anexo = document.querySelector('h5#anexo');
+        if (h5Anexo) {
+            h5Anexo.remove();
+        }
+    } else if (pageType === 'dolor') {
+        document.getElementById('filter-dolor').checked = true;
+        document.querySelectorAll('.filter-sintomas').forEach(el => {
+            el.closest('.form-check').classList.add('hidden-filter');
+        });
+        const h5Anexo = document.querySelector('h5#anexo1');
+        if (h5Anexo) {
+            h5Anexo.remove();
+        }
+    } else if (pageType === 'malestar') {
+        document.getElementById('filter-malestar').checked = true;
+        document.querySelectorAll('.filter-sintomas').forEach(el => {
+            el.closest('.form-check').classList.add('hidden-filter');
+        });
+        const h5Anexo = document.querySelector('h5#anexo1');
+        if (h5Anexo) {
+            h5Anexo.remove();
+        }
+    } else if (pageType === 'resfriado') {
+        document.getElementById('filter-refrio').checked = true;
+        document.querySelectorAll('.filter-sintomas').forEach(el => {
+            el.closest('.form-check').classList.add('hidden-filter');
+        });
+        const h5Anexo = document.querySelector('h5#anexo1');
         if (h5Anexo) {
             h5Anexo.remove();
         }
