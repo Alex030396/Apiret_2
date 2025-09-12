@@ -26,15 +26,55 @@
         </div>
     </div>
 </section>
-<div class="text-center mt-5"id="">
-    <h1 class="fw-bold bg-azul text-white" >Detalles del producto</h1>
+
+<div class="container-fluid bg-apiret mt-5">
+    <div class="container">
+        <div class="row row-cols-auto py-3">
+            <div class="col">
+                <p class="text-white mt-2 fs-3">Ir a</p>
+            </div>
+            <div class="col">
+                <a href="#uso" class="fw-bold mt-2 pt-1 fs-4 nav-link text-white" ><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <h3  class="letter fw-bold ">Uso</h3>
+            </button></a>
+            </div>
+            <div class="col">
+                <a href="#ingrediente" class="fw-bold mt-2 fs-4 pt-1 nav-link text-white"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                <h3 class="letter fw-bold ">Ingredientes</h3>
+            </button></a>
+            </div>
+            <div class="col">
+                <a href="#indicaciones" class="fw-bold mt-2 fs-4 pt-1 nav-link text-white"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                <h3 class="letter fw-bold ">Indicaciones</h3>
+            </button></a>
+            </div>
+            <div class="col">
+                <a href="#advertencia" class="fw-bold mt-2 fs-4 pt-1 nav-link text-white"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                <h3 class="letter fw-bold ">Advertencias</h3>
+            </button></a>
+            </div>
+            <div class="col">
+                
+                    <!-- <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                        <h3 class="letter fw-bold ">Informacion adicional</h3>
+                    </button> -->
+                    <button class="accordion-button" type="button" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive" onclick="handleSpecialButton(this)">
+                        <h3 class="letter fw-bold">Informacion adicional</h3>
+                    </button>
+            </div>
+            
+        </div>
+    </div>
 </div>
+
+
 <div class="accordion container mt-5" id="accordionPanelsStayOpenExample">
+    <h1 class="fw-bold letter-flux-noche" id="uso" >Detalles del producto</h1>
     <!-- ACORDION 1 -->
-    <div class="accordion-item">
-        <h2 class="accordion-header">
+    <div class="accordion-item mt-5" id="ingrediente">
+        <h2 class= " accordion-header" >
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                <h2 class="letter fw-bold ">Usos</h2>
+                <h2  class="letter fw-bold ">Uso</h2>
             </button>
         </h2>
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
@@ -46,7 +86,7 @@
         </div>
     </div>
     <!-- ACORDION 2 -->
-    <div class="accordion-item">
+    <div class="accordion-item "id="indicaciones">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
                 <h2 class="letter fw-bold ">Ingredientes</h2>
@@ -85,7 +125,7 @@
         </div>
     </div>
     <!-- ACORDION 3 -->
-    <div class="accordion-item">
+    <div class="accordion-item" id="advertencia">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
                 <h2 class="letter fw-bold ">Indicaciones</h2>
@@ -95,13 +135,15 @@
             <div class="accordion-body">
                 <div class="row">
                     <div class="col">
-                        <img src="img/gallery7.png" alt="dosis" class="img-fluid">
+                        <div class="ps-4">
+                            <img src="img/dosificacion-02.png" alt="dosis" class="mx-5" width="78%">
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col"><br>
                         <p ><strong>Posología:</strong> Uso Oral (Dosis Recomendada)</p>
-                        <p ><strong>10 mg/Kg/dosis, cada 4 - 6 horas.</strong></p>
-                        <p ><strong>Dosis máxima:</strong> 15mg/ kg</p>
-                        <table class="tables">
+                        <!-- <p ><strong>10 mg/Kg/dosis, cada 4 - 6 horas.</strong></p>
+                        <p ><strong>Dosis máxima:</strong> 15mg/ kg</p> -->
+                        <table class="tables mt-5">
                         <thead class="">
                             <tr>
                                 <th scope="col">Edad</th>
@@ -141,7 +183,7 @@
         </div>
     </div>
     <!-- ACORDION 4 -->
-    <div class="accordion-item">
+    <div class="accordion-item" id="infomacion">
         <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
                 <h2 class="letter fw-bold ">Advertencias</h2>
@@ -161,9 +203,9 @@
     <!-- ACORDION 5 -->
     <div class="accordion-item">
         <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
-                <h2 class="letter fw-bold ">Informacion adicional</h2>
-            </button>
+         <button id="boton-duplicado" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+            <h3 class="letter fw-bold">Informacion adicional</h3>
+        </button>
         </h2>
         <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse ">
             <div class="accordion-body">
@@ -188,6 +230,32 @@
         document.addEventListener('DOMContentLoaded', function() {
             console.log('Página cargada correctamente');
         });
+    </script>
+    <script>
+        function handleSpecialButton(button) {
+    const target = document.querySelector(button.getAttribute('data-bs-target'));
+    
+    // Verificar si el acordeón está cerrado
+    if (!target.classList.contains('show')) {
+        // Solo si está cerrado, abrir el acordeón
+        const bsCollapse = new bootstrap.Collapse(target, {
+            toggle: false
+        });
+        bsCollapse.show();
+        
+        // Cambiar el atributo aria-expanded
+        button.setAttribute('aria-expanded', 'true');
+    }
+    
+    // Siempre hacer el salto (siempre activo)
+    setTimeout(function() {
+        window.location.hash = '#boton-duplicado';
+    }, 10);
+    
+    // Prevenir que Bootstrap maneje el evento
+    event.stopPropagation();
+    event.preventDefault();
+}
     </script>
 </body>
 </html>
