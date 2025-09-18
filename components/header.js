@@ -17,8 +17,8 @@ class Header extends HTMLElement {
 <body>
 
     <!-- NAVEGADOR -->
-<header class="sticky-sm-top">
-<nav class="navbar navbar-expand-lg bg-apiret borde-bajo py-0" style="z-index: 2;" >
+<header ">
+<nav id="mainNavbar" class="navbar navbar-expand-lg bg-apiret borde-bajo py-0 fixed-top" style="z-index: 2;" >
     <div class="container ">
         <!-- Botón Hamburguesa - Solo visible en móvil -->
         <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
